@@ -1,0 +1,23 @@
+services:
+
+  mcmariadb:
+    image: mariadb
+    container_name: mcmariadb
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MARIADB_DATABASE: metalcompendium
+      MARIADB_ROOT_PASSWORD: super_secret_password
+      MYSQL_USER: metalicus
+      MYSQL_PASSWORD: secret_password
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./scripts:docker-entrypoint-initdb.d
+    networks:
+      - mcnet
+
+# Use a pre-existing network
+networks:
+  mcnet:
+    name: mcnet
