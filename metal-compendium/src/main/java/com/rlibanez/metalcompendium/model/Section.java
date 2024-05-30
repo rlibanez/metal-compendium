@@ -9,46 +9,46 @@ import jakarta.persistence.Table;
 public class Section {
 	@Id
 	private String name;
-	private float G;
-	private float h;
-	private float b;
-	private float tw;
-	private float tf;
-	private float r1;
-	private float r2;
-	private float A;
-	private float hi;
-	private float d;
+	private Float G;
+	private Float h;
+	private Float b;
+	private Float tw;
+	private Float tf;
+	private Float r1;
+	private Float r2;
+	private Float A;
+	private Float hi;
+	private Float d;
 	private String dmax;
 	private Integer emin;
 	private Integer emax;
 	private Integer pmin;
 	private Integer pmax;
-	private float AL;
-	private float AG;
-	private float Iy;
-	private float Wely;
-	private float Wply;
-	private float iyc;
-	private float Avz;
-	private float Iz;
-	private float Welz;
-	private float Wplz;
-	private float izc;
-	private float ss;
-	private float It;
-	private float Iw;
-	private float ys;
-	private float ym;
-	private boolean yS235;
-	private boolean yS355;
-	private boolean yS460;
-	private boolean xS235;
-	private boolean xS355;
-	private boolean xS460;
-	private boolean EN1002522004;
-	private boolean EN1002542004;
-	private boolean EN102252001;
+	private Float AL;
+	private Float AG;
+	private Float Iy;
+	private Float Wely;
+	private Float Wply;
+	private Float iyc;
+	private Float Avz;
+	private Float Iz;
+	private Float Welz;
+	private Float Wplz;
+	private Float izc;
+	private Float ss;
+	private Float It;
+	private Float Iw;
+	private Float ys;
+	private Float ym;
+	private Boolean yS235;
+	private Boolean yS355;
+	private Boolean yS460;
+	private Boolean xS235;
+	private Boolean xS355;
+	private Boolean xS460;
+	private Boolean EN1002522004;
+	private Boolean EN1002542004;
+	private Boolean EN102252001;
 
 	public Section() {
 	}
@@ -61,83 +61,83 @@ public class Section {
 		this.name = name;
 	}
 
-	public float getG() {
+	public Float getG() {
 		return G;
 	}
 
-	public void setG(float g) {
+	public void setG(Float g) {
 		G = g;
 	}
 
-	public float getH() {
+	public Float getH() {
 		return h;
 	}
 
-	public void setH(float h) {
+	public void setH(Float h) {
 		this.h = h;
 	}
 
-	public float getB() {
+	public Float getB() {
 		return b;
 	}
 
-	public void setB(float b) {
+	public void setB(Float b) {
 		this.b = b;
 	}
 
-	public float getTw() {
+	public Float getTw() {
 		return tw;
 	}
 
-	public void setTw(float tw) {
+	public void setTw(Float tw) {
 		this.tw = tw;
 	}
 
-	public float getTf() {
+	public Float getTf() {
 		return tf;
 	}
 
-	public void setTf(float tf) {
+	public void setTf(Float tf) {
 		this.tf = tf;
 	}
 
-	public float getR1() {
+	public Float getR1() {
 		return r1;
 	}
 
-	public void setR1(float r1) {
+	public void setR1(Float r1) {
 		this.r1 = r1;
 	}
 
-	public float getR2() {
+	public Float getR2() {
 		return r2;
 	}
 
-	public void setR2(float r2) {
+	public void setR2(Float r2) {
 		this.r2 = r2;
 	}
 
-	public float getA() {
+	public Float getA() {
 		return A;
 	}
 
-	public void setA(float a) {
+	public void setA(Float a) {
 		A = a;
 	}
 
-	public float getHi() {
+	public Float getHi() {
 		return hi;
 	}
 
-	public void setHi(float hi) {
+	public void setHi(Float hi) {
 		this.hi = hi;
 	}
 
-	public float getD() {
+	public Float getD() {
 		return d;
 	}
 
-	public void setD(float d) {
+	public void setD(Float d) {
 		this.d = d;
 	}
 
@@ -181,203 +181,203 @@ public class Section {
 		this.pmax = pmax;
 	}
 
-	public float getAL() {
+	public Float getAL() {
 		return AL;
 	}
 
-	public void setAL(float aL) {
+	public void setAL(Float aL) {
 		AL = aL;
 	}
 
-	public float getAG() {
+	public Float getAG() {
 		return AG;
 	}
 
-	public void setAG(float aG) {
+	public void setAG(Float aG) {
 		AG = aG;
 	}
 
-	public float getIy() {
+	public Float getIy() {
 		return Iy;
 	}
 
-	public void setIy(float iy) {
+	public void setIy(Float iy) {
 		Iy = iy;
 	}
 
-	public float getWely() {
+	public Float getWely() {
 		return Wely;
 	}
 
-	public void setWely(float wely) {
+	public void setWely(Float wely) {
 		Wely = wely;
 	}
 
-	public float getWply() {
+	public Float getWply() {
 		return Wply;
 	}
 
-	public void setWply(float wply) {
+	public void setWply(Float wply) {
 		Wply = wply;
 	}
 
-	public float getIyc() {
+	public Float getIyc() {
 		return iyc;
 	}
 
-	public void setIyc(float iyc) {
+	public void setIyc(Float iyc) {
 		this.iyc = iyc;
 	}
 
-	public float getAvz() {
+	public Float getAvz() {
 		return Avz;
 	}
 
-	public void setAvz(float avz) {
+	public void setAvz(Float avz) {
 		Avz = avz;
 	}
 
-	public float getIz() {
+	public Float getIz() {
 		return Iz;
 	}
 
-	public void setIz(float iz) {
+	public void setIz(Float iz) {
 		Iz = iz;
 	}
 
-	public float getWelz() {
+	public Float getWelz() {
 		return Welz;
 	}
 
-	public void setWelz(float welz) {
+	public void setWelz(Float welz) {
 		Welz = welz;
 	}
 
-	public float getWplz() {
+	public Float getWplz() {
 		return Wplz;
 	}
 
-	public void setWplz(float wplz) {
+	public void setWplz(Float wplz) {
 		Wplz = wplz;
 	}
 
-	public float getIzc() {
+	public Float getIzc() {
 		return izc;
 	}
 
-	public void setIzc(float izc) {
+	public void setIzc(Float izc) {
 		this.izc = izc;
 	}
 
-	public float getSs() {
+	public Float getSs() {
 		return ss;
 	}
 
-	public void setSs(float ss) {
+	public void setSs(Float ss) {
 		this.ss = ss;
 	}
 
-	public float getIt() {
+	public Float getIt() {
 		return It;
 	}
 
-	public void setIt(float it) {
+	public void setIt(Float it) {
 		It = it;
 	}
 
-	public float getIw() {
+	public Float getIw() {
 		return Iw;
 	}
 
-	public void setIw(float iw) {
+	public void setIw(Float iw) {
 		Iw = iw;
 	}
 
-	public float getYs() {
+	public Float getYs() {
 		return ys;
 	}
 
-	public void setYs(float ys) {
+	public void setYs(Float ys) {
 		this.ys = ys;
 	}
 
-	public float getYm() {
+	public Float getYm() {
 		return ym;
 	}
 
-	public void setYm(float ym) {
+	public void setYm(Float ym) {
 		this.ym = ym;
 	}
 
-	public boolean isyS235() {
+	public Boolean getyS235() {
 		return yS235;
 	}
 
-	public void setyS235(boolean yS235) {
+	public void setyS235(Boolean yS235) {
 		this.yS235 = yS235;
 	}
 
-	public boolean isyS355() {
+	public Boolean getyS355() {
 		return yS355;
 	}
 
-	public void setyS355(boolean yS355) {
+	public void setyS355(Boolean yS355) {
 		this.yS355 = yS355;
 	}
 
-	public boolean isyS460() {
+	public Boolean getyS460() {
 		return yS460;
 	}
 
-	public void setyS460(boolean yS460) {
+	public void setyS460(Boolean yS460) {
 		this.yS460 = yS460;
 	}
 
-	public boolean isxS235() {
+	public Boolean getxS235() {
 		return xS235;
 	}
 
-	public void setxS235(boolean xS235) {
+	public void setxS235(Boolean xS235) {
 		this.xS235 = xS235;
 	}
 
-	public boolean isxS355() {
+	public Boolean getxS355() {
 		return xS355;
 	}
 
-	public void setxS355(boolean xS355) {
+	public void setxS355(Boolean xS355) {
 		this.xS355 = xS355;
 	}
 
-	public boolean isxS460() {
+	public Boolean getxS460() {
 		return xS460;
 	}
 
-	public void setxS460(boolean xS460) {
+	public void setxS460(Boolean xS460) {
 		this.xS460 = xS460;
 	}
 
-	public boolean isEN1002522004() {
+	public Boolean getEN1002522004() {
 		return EN1002522004;
 	}
 
-	public void setEN1002522004(boolean eN1002522004) {
+	public void setEN1002522004(Boolean eN1002522004) {
 		EN1002522004 = eN1002522004;
 	}
 
-	public boolean isEN1002542004() {
+	public Boolean getEN1002542004() {
 		return EN1002542004;
 	}
 
-	public void setEN1002542004(boolean eN1002542004) {
+	public void setEN1002542004(Boolean eN1002542004) {
 		EN1002542004 = eN1002542004;
 	}
 
-	public boolean isEN102252001() {
+	public Boolean getEN102252001() {
 		return EN102252001;
 	}
 
-	public void setEN102252001(boolean eN102252001) {
+	public void setEN102252001(Boolean eN102252001) {
 		EN102252001 = eN102252001;
 	}
 
