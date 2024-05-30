@@ -17,15 +17,19 @@ public class SectionService {
 	}
 	
 	public List<Section> getAllSections() {
-        return sectionRepository.findAll();
+        return sectionRepository.findAllByOrderByName();
     }
 	
-	public Section getSectionByName(String name) {
-        return sectionRepository.findByNameContaining(name);
+	public List<Section> getSectionsByContainingName(String name) {
+        return sectionRepository.findByNameContainingOrderByH(name);
 	}
 	
-	public List<Section> getSectionsByType(String type) {
-        return sectionRepository.findByNameStartingWith(type);
+	public List<Section> getSectionsByStartingWith(String start) {
+        return sectionRepository.findByNameStartingWithOrderByH(start);
+    }
+	
+	public List<Section> getSectionsByEndingWith(String end) {
+        return sectionRepository.findByNameEndingWithOrderByH(end);
     }
 
 }

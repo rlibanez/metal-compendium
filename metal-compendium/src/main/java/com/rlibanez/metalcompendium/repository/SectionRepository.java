@@ -10,10 +10,12 @@ import com.rlibanez.metalcompendium.model.Section;
 @Repository
 public interface SectionRepository extends JpaRepository<Section, String> {
 	
-	List<Section> findAll();
+	List<Section> findAllByOrderByName();
 	
-	Section findByNameContaining(String name);
+	List<Section> findByNameContainingOrderByH(String name);
 	
-	List<Section> findByNameStartingWith(String type);
+	List<Section> findByNameStartingWithOrderByH(String start);
+	
+	List<Section> findByNameEndingWithOrderByH(String end);
 	
 }
