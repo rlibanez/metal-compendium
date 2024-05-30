@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS section (
     Name VARCHAR(10) PRIMARY KEY,
     G DECIMAL(10, 2),
     h DECIMAL(10, 1),
-    b INT,
+    b DECIMAL(10, 1),
     tw DECIMAL(10, 1),
     tf DECIMAL(10, 1),
     r1 DECIMAL(10, 1),
