@@ -23,5 +23,9 @@ public class SectionService {
 	public Section getSectionByName(String name) {
         return sectionRepository.findByNameContaining(name);
 	}
+	
+	public List<Section> getSectionsByType(String type) {
+        return sectionRepository.findByNameStartingWith(type);
+    }
 
 }

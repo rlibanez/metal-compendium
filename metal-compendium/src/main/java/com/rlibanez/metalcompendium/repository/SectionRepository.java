@@ -14,4 +14,6 @@ public interface SectionRepository extends JpaRepository<Section, String> {
 	
 	Section findByNameContaining(String name);
 	
+	List<Section> findByNameStartingWith(String type);
+	
 }
