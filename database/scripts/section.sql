@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS section (
     pmin INT,
     pmax INT,
     AL DECIMAL(10, 3),
-    AG DECIMAL(10, 2),
+    AG DECIMAL(10, 3),
     Iy DECIMAL(10, 2),
     Wely DECIMAL(10, 2),
     Wply DECIMAL(10, 2),
