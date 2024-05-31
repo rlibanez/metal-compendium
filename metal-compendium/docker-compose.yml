@@ -1,0 +1,20 @@
+services:
+
+  metal-compendium:
+    image: metal-compendium:0.0.1
+    build: .
+    container_name: metal-compendium
+    ports: 
+      - 8008:8008
+    environment:
+      - DATABASE_URL=jdbc:mariadb://localhost:3306/metalcompendium
+      - DATABASE_USERNAME=metalicus
+      - DATABASE_PASSWORD=secret_password
+      - APPLICATION_PORT=8008
+    networks:
+      - mcnet
+
+# Use a pre-existing network
+networks:
+  mcnet:
+    name: mcnet
