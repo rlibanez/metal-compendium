@@ -3,6 +3,7 @@ package com.rlibanez.metalcompendium.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,6 +25,11 @@ public class SectionController {
     public List<Section> getAllSections() {
         return sectionService.getAllSections();
     }
+	
+	@GetMapping("{name}")
+	public Section getSectionsByName(@PathVariable String name) {
+		return sectionService.getSectionsByName(name);
+	}
 
     @GetMapping
     public List<Section> getSectionsByPartialName(@RequestParam(required = false) String start,

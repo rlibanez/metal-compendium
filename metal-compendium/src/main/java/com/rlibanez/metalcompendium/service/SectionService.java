@@ -20,6 +20,10 @@ public class SectionService {
         return sectionRepository.findAllByOrderByName();
     }
 	
+	public Section getSectionsByName(String name) {
+        return sectionRepository.findByName(name);
+	}
+	
 	public List<Section> getSectionsByContainingName(String name) {
         return sectionRepository.findByNameContainingOrderByH(name);
 	}

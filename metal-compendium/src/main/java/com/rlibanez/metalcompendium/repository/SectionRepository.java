@@ -12,6 +12,8 @@ public interface SectionRepository extends JpaRepository<Section, String> {
 	
 	List<Section> findAllByOrderByName();
 	
+	Section findByName(String name);
+	
 	List<Section> findByNameContainingOrderByH(String name);
 	
 	List<Section> findByNameStartingWithOrderByH(String start);
