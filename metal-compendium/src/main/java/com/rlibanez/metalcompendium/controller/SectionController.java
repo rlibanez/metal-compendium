@@ -21,16 +21,19 @@ public class SectionController {
 		this.sectionService = sectionService;
 	}
 
+	// /api/sections/all
 	@GetMapping("/all")
     public List<Section> getAllSections() {
         return sectionService.getAllSections();
     }
 	
+	// /api/sections/ipn100
 	@GetMapping("{name}")
 	public Section getSectionsByName(@PathVariable String name) {
 		return sectionService.getSectionsByName(name);
 	}
 
+	// /api/sections?start=ipn100
     @GetMapping
     public List<Section> getSectionsByPartialName(@RequestParam(required = false) String start,
             @RequestParam(required = false) String contain,
